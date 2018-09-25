@@ -177,6 +177,7 @@
 				newCircle.fillColor = keyData[event.key].color;
 				keyData[event.key].sound.play();
 				circles.push(newCircle);
+				document.getElementById("hint").style.display="none"
 			}
 		}
 
@@ -194,6 +195,10 @@
 	</script>
 </head>
 <body>
+	<div id="hint" style="display: block;">
+		<p class="message">Press any key, A to Z or spacebar, and turn up speakers</p>
+	</div>
 	<canvas id="myCanvas" resize></canvas>
+	<script src="custom.js"></script>
 </body>
 </html>
